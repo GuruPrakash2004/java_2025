@@ -14,7 +14,7 @@ public class CollectionIterface {
         num.add(3);
         num.add(2);
 
-        num.
+       
 
         System.out.println(num.get(0));
 
