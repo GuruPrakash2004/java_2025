@@ -45,9 +45,17 @@ public class ArrayRotation {
         start++;
         end--; 
     }
-   
+    
+ }
+ public static void RigthRotation(int[] nums,int start,int end){
 
-
+    while (start <= end) {
+        int temp = nums[start];
+        nums[start] = nums[end];
+        nums[end] = temp;
+        start++;
+        end--; 
+    }
     
  }
 
@@ -68,10 +76,19 @@ public class ArrayRotation {
        d = d%n;
        
 
-
+        //left rotation
        OptimalRotation(arr, 0, d -1);
        OptimalRotation(arr, d, n-1);
        OptimalRotation(arr, 0, n-1);
+       System.out.println(Arrays.toString(arr));
+
+
+//rigth rotation
+        RigthRotation(arr, n - d, n - 1);
+        RigthRotation(arr, 0, n - d - 1);
+        RigthRotation(arr, 0, n - 1);
+
+        System.out.println("Array after right rotation:");
         System.out.println(Arrays.toString(arr));
 
 sc.close();

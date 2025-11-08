@@ -33,7 +33,7 @@ public static String smallestString(String s){
             "hackerrank",
             "abc",
             "aaa",
-            "b",
+            "c",
             " ",
             "zzz",
             "aaba"
